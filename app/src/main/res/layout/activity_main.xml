@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/side_padding"
+    android:paddingEnd="@dimen/side_padding"
+    android:paddingBottom="@dimen/side_padding">
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/name"
+        android:textAlignment="center"
+        tools:text="@string/name" />
+
+    <ImageView
+        android:id="@+id/yellow_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_weight="0"
+        android:background="#FFF"
+        android:contentDescription="@string/star_content_description"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:contentDescription="@string/bio_area"
+        android:paddingBottom="@dimen/side_padding">
+
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:lineSpacingMultiplier="@dimen/line_spacing_multiplier"
+            android:paddingBottom="16dip"
+            android:text="@string/bio_content" />
+    </ScrollView>
+</LinearLayout>
