@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingStart="@dimen/side_padding"
     android:paddingEnd="@dimen/side_padding"
@@ -18,6 +19,43 @@
         android:text="@string/name"
         android:textAlignment="center"
         tools:text="@string/name" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="@string/nickname_edit_hint"
+        android:importantForAccessibility="noHideDescendants"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords|textCapCharacters"
+        android:textAlignment="center"
+        android:textColorHint="#58849A" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_weight="0"
+        android:fontFamily="monospace"
+        android:gravity="center|center_horizontal"
+        android:text="@string/done"
+        android:textAlignment="center"
+        app:backgroundTint="@color/bright_green"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nickname"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="center"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/yellow_star"
